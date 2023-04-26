@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# RewriteBase /
+
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule "home.html" "index.php"
+RewriteRule "^([a-zA-Z0-9]+).html$" "index.php?action=$1"
